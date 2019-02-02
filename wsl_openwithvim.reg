@@ -1,0 +1,7 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_CLASSES_ROOT\*\shell\OpenWithVim]
+@="Open with Vim (&W)"
+
+[HKEY_CLASSES_ROOT\*\shell\OpenWithVIM\command]
+@="C:\\Windows\\System32\\bash.exe -c \"vim \\\"$(wslpath -a -u \"%1\")\\\"\""
